@@ -9,6 +9,7 @@ class MyTestClass(HomePage):
         HomePage.open_page_max(self)
 
     def tearDown(self):
+        self.driver.quit()
         super().tearDown()
 
 

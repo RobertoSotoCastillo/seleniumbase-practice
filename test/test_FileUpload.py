@@ -7,6 +7,7 @@ class MyTestClass(FileUpload):
         FileUpload.open_page_max(self)
 
     def tearDown(self):
+        self.driver.quit()
         super().tearDown()
 
 #upload expected files
